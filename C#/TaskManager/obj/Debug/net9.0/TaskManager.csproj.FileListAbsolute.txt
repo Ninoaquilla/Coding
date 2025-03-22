@@ -1,0 +1,14 @@
+D:\nino\Coding\C#\TaskManager\bin\Debug\net9.0\TaskManager.exe
+D:\nino\Coding\C#\TaskManager\bin\Debug\net9.0\TaskManager.deps.json
+D:\nino\Coding\C#\TaskManager\bin\Debug\net9.0\TaskManager.runtimeconfig.json
+D:\nino\Coding\C#\TaskManager\bin\Debug\net9.0\TaskManager.dll
+D:\nino\Coding\C#\TaskManager\bin\Debug\net9.0\TaskManager.pdb
+D:\nino\Coding\C#\TaskManager\obj\Debug\net9.0\TaskManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\nino\Coding\C#\TaskManager\obj\Debug\net9.0\TaskManager.AssemblyInfoInputs.cache
+D:\nino\Coding\C#\TaskManager\obj\Debug\net9.0\TaskManager.AssemblyInfo.cs
+D:\nino\Coding\C#\TaskManager\obj\Debug\net9.0\TaskManager.csproj.CoreCompileInputs.cache
+D:\nino\Coding\C#\TaskManager\obj\Debug\net9.0\TaskManager.dll
+D:\nino\Coding\C#\TaskManager\obj\Debug\net9.0\refint\TaskManager.dll
+D:\nino\Coding\C#\TaskManager\obj\Debug\net9.0\TaskManager.pdb
+D:\nino\Coding\C#\TaskManager\obj\Debug\net9.0\TaskManager.genruntimeconfig.cache
+D:\nino\Coding\C#\TaskManager\obj\Debug\net9.0\ref\TaskManager.dll
