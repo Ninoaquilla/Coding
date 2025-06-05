@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Will You Be My Girlfriend?</title>
+    <style>
+        body {
+            background: #ffe6f2;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .proposal-box {
+            background: #fff0f6;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(255, 0, 128, 0.1);
+            padding: 40px 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #d72660;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        p {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .heart {
+            font-size: 3em;
+            color: #ff3366;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            20%, 60% { transform: scale(1.2); }
+            40%, 80% { transform: scale(0.9); }
+        }
+        .btn {
+            background: #ff3366;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin: 10px;
+        }
+        .btn:hover {
+            background: #d72660;
+        }
+    </style>
+</head>
+<body>
+    <div class="proposal-box">
+        <div class="heart">❤️</div>
+        <h1>Will You Be My Girlfriend?</h1>
+        <p>You make my world brighter every day. <br>Will you make me the happiest person and be my girlfriend?</p>
+        <button class="btn" onclick="alert('Yay! I love you! 💖')">Yes</button>
+        <button class="btn" onclick="alert('I\'ll keep trying! 😊')">No</button>
+    </div>
+</body>
+</html>

@@ -2,13 +2,13 @@ import os
 import random
 import string
 
-def generate_random_string(length=12):
-    characters = string.ascii_letters + string.digits  # Huruf besar, kecil, dan angka
+def generate_random_string(length=15):
+    characters = string.ascii_letters + string.digits
     return ''.join(random.choices(characters, k=length))
 
 def save_to_file(folder='output', filename='random_string.txt'):
     if not os.path.exists(folder):
-        os.makedirs(folder)  # Buat folder jika belum ada
+        os.makedirs(folder)
     
     random_string = generate_random_string()
     file_path = os.path.join(folder, filename)

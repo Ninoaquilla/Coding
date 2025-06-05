@@ -1,0 +1,13 @@
+function spawnObstacles() {
+    // Decide how many obstacles to spawn (1 or 2, never 3)
+    const lanes = [0, 1, 2];
+    // Shuffle lanes
+    for (let i = lanes.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [lanes[i], lanes[j]] = [lanes[j], lanes[i]];
+    }
+    const count = Math.random() < 0.7 ? 1 : 2; // 70% chance for 1, 30% for 2
+    for (let i = 0; i < count; i++) {
+        obstacles.push({ lane: lanes[i], y: -obstacleHeight });
+    }
+}

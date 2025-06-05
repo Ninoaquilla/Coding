@@ -1,0 +1,64 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(354deg, white, #add8e6, rgb(144, 176, 197));
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    max-height: 1vh;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.judul{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 140%;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(120deg, rgb(86, 204, 204), rgb(114, 255, 255), rgb(192, 255, 255));
+    width: 90%;
+    outline: 2px solid rgb(53, 55, 59);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.navigasi {
+    background-color: aliceblue;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigasi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigasi li {
+    margin: 0 7%;
+    margin-left: 60;
+    margin-right: 60;
+    border: 1px solid black;
+}
+
+.navigasi a {
+    color: rgb(57, 54, 241);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
