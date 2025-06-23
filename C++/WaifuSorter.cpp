@@ -71,14 +71,31 @@ void save(const  vector<waifu>& listwaifu) {
 }
 
 int main() {
-    string pilihan;
+    int pilihan;
     do {
-        cout << "-----------------------------------" << endl;
-        cout << "-----------WAIFU LIST--------------" << endl;
-        cout << "----------Tambah Waifu(1)-------------" << endl;
-        cout << "--------Lihat List Waifu(2)-----------" << endl;
-        cout << "------Simpan Waifu saat ini(3)--------" << endl;
+        cout << "\nMenu:\n";
+        cout << "1. Tambah Waifu\n";
+        cout << "2. Lihat Daftar Waifu\n";
+        cout << "3. Simpan ke File\n";
+        cout << "4. Keluar\n";
+        cout << "Pilih menu: ";
         cin >> pilihan;
-    } while (pilihan != "4");
 
+        switch (pilihan) {
+            case 1:
+                Add();
+                break;
+            case 2:
+                list();
+                break;
+            case 3:
+                save(listwaifu);
+                break;
+            case 4:
+                cout << "Keluar...\n";
+                break;
+            default:
+                cout << "Pilihan tidak valid.\n";
+        }
+    } while (pilihan != 4);
 }
