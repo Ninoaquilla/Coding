@@ -72,7 +72,7 @@ void BangunRuang() {
     for (int i = 0; i < Jbangun; i++) {
         cout << i + 1 << ". " << bangun[i] << endl;
     };
-
+    cout << "Masukkan Perintah, panjang sisi A, B dan C." << endl;
     cin >> perintah >> a >> b >> c;
     if (perintah == 1) {
         for (int i = 0; i < Jtarget; i++) {
@@ -89,10 +89,6 @@ void BangunRuang() {
     }
 
 }
-
-/*
-
-*/
 
 int main() {
     while(true) {
