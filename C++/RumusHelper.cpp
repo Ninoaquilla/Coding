@@ -62,15 +62,66 @@ void phitagoras() {
 
 void BangunRuang() {
     int perintah, tanya;
-    double a, b, c, hasil;
+    double a;
 
     string bangun[] = {"persegi", "Persegi Panjang", "Segitiga", "Lingkaran", "Kubus", "Balok", "Prisma"};
     int Jbangun = sizeof(bangun) / sizeof(bangun[0]);
-    string target[] = {"Luas", "Keliling"};
-    int Jtarget = sizeof(target) / sizeof(target[0]);
 
     for (int i = 0; i < Jbangun; i++) {
         cout << i + 1 << ". " << bangun[i] << endl;
+    }
+    cout << "Masukkan Perintah: ";
+    cin >> perintah;
+
+    if (perintah == 1) {
+        cout << "Apa yang dicari?" << endl;
+        cout << "1. Luas" << endl;
+        cout << "2. Keliling" << endl;
+        cout << "3. Sisi" << endl;
+        cin >> tanya;
+        if (tanya == 1) {
+            cout << "Masukkan Panjang Sisi: ";
+            cin >> a;
+            cout << "L.Persegi = Sisi²" << endl;
+            cout << "L.Persegi = " << a << "²" << endl;
+            cout << "L.Persegi = " << a * a <<  endl;
+        } else if (tanya == 2) {
+            cout << "Masukkan Panjang Sisi: ";
+            cin >> a;
+            cout << "K.Persegi = Sisi x 4" << endl;
+            cout << "K.Persegi = " << a << " x 4" << endl;
+            cout << "K.Persegi = " << a * 4 <<  endl;
+        } else if (tanya == 3) {
+            string SKeliling, SLuas;
+            double Keliling, Luas;
+            cout << "Masukkan Keliling / Luas (Null untuk nilai masih belum diketahui.): " << endl;
+            cin >> SKeliling >> SLuas;
+            if (SKeliling == "Null") {
+                Luas = stod(SLuas);
+                cout << "S.Persegi = √Luas" << endl;
+                cout << "S.Persegi = √" << Luas << endl;
+                cout << "S.Persegi = " << sqrt(Luas) << endl;
+            } else if (SLuas == "Null") {
+                Keliling = stod (SKeliling);
+                cout << "S.Persegi = Keliling / 4" << endl;
+                cout << "S.Persegi = " << Keliling << "/ 4" << endl;
+                cout << "S.Persegi = " << Keliling / 4 << endl;                
+            } else if (SLuas != "Null" && SKeliling != "Null") {
+                Luas = stod(SLuas);
+                Keliling = stod (SKeliling);
+                cout << "Metode 1(luas):" << endl;
+                cout << "S.Persegi = √Luas" << endl;
+                cout << "S.Persegi = √" << Luas << endl;
+                cout << "S.Persegi = " << sqrt(Luas) << endl;
+                cout << "Metode 2(keliling):" << endl;
+                cout << "S.Persegi = Keliling / 4" << endl;
+                cout << "S.Persegi = " << Keliling << "/ 4" << endl;
+                cout << "S.Persegi = " << Keliling / 4 << endl;
+            }
+        }
+    }
+}
+/*
     };
     cout << "Masukkan Perintah, panjang sisi A, B dan C." << endl;
     cin >> perintah >> a >> b >> c;
@@ -87,9 +138,7 @@ void BangunRuang() {
             cout << "L = " << hasil << endl;
         }
     }
-
-}
-
+*/
 int main() {
     while(true) {
         SetConsoleOutputCP(CP_UTF8);
