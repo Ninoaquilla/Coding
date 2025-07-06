@@ -159,6 +159,43 @@ void BangunRuang() {
                 cout << "P.Persegi panjang = " << (kel - lebar * 2) / 2 << endl;
             }
         }
+    } else if (perintah == 2) {
+        cout << "Apa yang dicari?" << endl;
+        cout << "1. Luas" << endl;
+        cout << "2. Keliling" << endl;
+        cout << "3. Panjang" << endl;
+        cout << "4. Lebar" << endl;
+        cin >> tanya;
+
+        if (tanya == 1) {
+            cout << "Masukkan Panjang Lebar dan Tinggi: ";
+            cin >> panjang >> lebar;
+            cout << "L.Persegi panjang = P x L" << endl;
+            cout << "L.Persegi Panjang = " << panjang << " x " << lebar << endl;
+            cout << "L.Persegi panjang = " << panjang * lebar << endl;
+        } else if (tanya == 2) {
+            cout << "Masukkan Panjang Lebar dan Tinggi: ";
+            cin >> panjang >> lebar;
+            cout << "K.Persegi panjang = 2P + 2L" << endl;
+            cout << "K.Persegi Panjang = 2" << panjang << " + 2" << lebar << endl;
+            cout << "K.Persegi panjang = " << panjang * 2 << " + " << lebar * 2 << endl;
+            cout << "K.Persegi panjang = " << panjang * 2 + panjang * 2 << endl;
+        } else if (tanya == 3) {
+            string Sl, Sk;
+            double luas, kel, lebar;
+
+            cout << "Masukkan Luas / Keliling / lebar (Null untuk nilai tidak diketahui): " << endl;
+            cin >> Sl >> Sk >> lebar;
+
+            if (Sl == "Null") {
+                kel = stod(Sk);
+                cout << "P.Persegi panjang = (Kel - 2.lebar) / 2" << endl;
+                cout << "P.Persegi panjang = " << "(" << kel << " - " << "2 x " << lebar << ") / 2" << endl;
+                cout << "P.Persegi panjang = " << "(" << kel << " - " << lebar * 2 << ") / 2" << endl;
+                cout << "P.Persegi panjang = " << "(" << kel - lebar * 2 << ") / 2" << endl;
+                cout << "P.Persegi panjang = " << (kel - lebar * 2) / 2 << endl;
+            }
+        }
     }
 }
 /*
